@@ -78,6 +78,10 @@ app.get("/helpertypes", function(req,res){
 	res.render("helpertypes.ejs");
 });
 
+app.get("/providers", functon(req,res){
+	res.render("providers.ejs");
+});
+
 // Change this part below.... env.PORT is only for cloud9 
 
 app.listen(process.env.PORT, process.env.IP, function(){
