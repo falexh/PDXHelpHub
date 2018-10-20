@@ -35,6 +35,10 @@ app.get("/", function(req, res){
     res.render("landing");
 });
 
+app.get("/", function(req, res){
+	res.render("landing");
+});
+
 app.get("/shelters", function(req, res){
    
     res.render("/");
