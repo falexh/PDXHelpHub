@@ -3,8 +3,14 @@
 
 <h1> Welcome to the map of Portland, with each shelter resource indicated by color </h1> 
 
-<img src="/images/mapAPI.jpg" alt="Pic of Map API" style="margin: 0 auto;">
+<img src="/images/mapAPI.jpg" alt="Pic of Map API" style="margin-left: auto; margin-right:auto; display:block; width:50%;">
 
-<p><span style="color:green">GREEN</span> - open during the night and has open capacity </p>
+<div class="container">
+  <p><span style="color:green">GREEN</span> - open during the night and has open capacity </p>
+  <p><span style="color:purple">PURPLE</span> - open during the day only </p>
+  <p><span style="color:yellow">YELLOW</span> - open but full: may be able to accept additional persons </p>
+  <p><span style="color:orange">ORANGE</span> - open, capacity is unknown </p>
+  <p><span style="color:red">RED</span> - closed </p>
+</div>
 
 <% include partials/footer %>
