@@ -78,7 +78,7 @@ app.get("/helpertypes", function(req,res){
 	res.render("helpertypes.ejs");
 });
 
-app.get("/providers", functon(req,res){
+app.get("/providers", function(req,res){
 	res.render("providers.ejs");
 });
 
