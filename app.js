@@ -25,7 +25,6 @@ Shelter.create(
     if(err){
         console.log(err);
     }else{
-        console.log("the database is created!");
         console.log(shelter);
     }
 });
