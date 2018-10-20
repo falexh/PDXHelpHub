@@ -64,6 +64,10 @@ app.get("/shelters/new", function(req, res){
     res.render("new.ejs");
 });
 
+app.get("/help",function(req,res){
+    res.render("help.ejs");
+});
+
 
 // Change this part below.... env.PORT is only for cloud9 
 
