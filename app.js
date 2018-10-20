@@ -21,12 +21,12 @@ Shelter.create(
     {
         name: "", 
         image: ""
-    }, function(err,trail){
+    }, function(err,shelter){
     if(err){
         console.log(err);
     }else{
         console.log("the database is created!");
-        console.log(trail);
+        console.log(shelter);
     }
 });
 
