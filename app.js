@@ -4,21 +4,21 @@ var express    = require("express"),
     mongoose   = require("mongoose");
     
     
-mongoose.connect("mongodb://localhost/shelter_app");
+//mongoose.connect("mongodb://localhost/shelter_app");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use( express.static( "public" ) );
 app.set("view engine", "ejs");
 
 //SCHEMA SETUP 
 
-var shelterSchema = new mongoose.Schema({
+/*var shelterSchema = new mongoose.Schema({
     name: String,
     image: String
-});
+});*/
 
-var Shelter = mongoose.model("Shelter", shelterSchema);
+//var Shelter = mongoose.model("Shelter", shelterSchema);
     
-Shelter.create(
+/*Shelter.create(
     {
         name: "", 
         image: ""
@@ -28,7 +28,7 @@ Shelter.create(
     }else{
         console.log(shelter);
     }
-});
+});*/
 
 
 app.get("/", function(req, res){
