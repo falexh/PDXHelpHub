@@ -36,6 +36,9 @@ app.get("/", function(req, res){
 
 app.get("/shelters", function(req, res){
    
+    res.render("/");
+    
+    /* Database not being implemented currently 
     //get all trails from DB and then render 
     Shelter.find({},function(err,allShelters){
         if(err){
@@ -44,13 +47,14 @@ app.get("/shelters", function(req, res){
             res.render("shelters", {shelters:allShelters});
         }
     });
+    */
 });
 
 app.post("/shelters", function(req, res){
     var name = req.body.name;
     var quantity = req.body.quantity;
     var newShelter = {name:name, image:image};
-    //create new trail and save to DB
+    //create new shelter/supplies and save to DB
     Shelter.create(newShelter,function(err,newlyCreated){
         if(err){
             console.log(err);
